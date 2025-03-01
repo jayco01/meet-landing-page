@@ -138,6 +138,7 @@ a {
     margin: 2rem 0rem;
     text-align: center;
     gap: 1rem;
+    padding: 0 1.5rem;
 }
 
 .hero__title {
@@ -145,10 +146,15 @@ a {
     font-weight: 900;
 }
 
+.hero__description {
+  color: var(--clr-darkblue-title);
+}
+
 .hero__btns {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .btn--blue {
@@ -172,6 +178,30 @@ a {
     padding: 1.5rem;
 }
 
+.numwrapper {
+  margin: 3rem 0rem;
+}
+
+.line {
+  margin: 0 auto;
+  border: 1px solid var(--clr-grey-text);
+  width: 0;
+  height: 75px;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--clr-grey-text);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 5px;
+  font-weight: 800;
+}
+
 .chat__grid {
     display: grid;
     grid-template-areas: 
@@ -179,6 +209,7 @@ a {
     'men man'
     ;
     gap: 1rem;
+    margin-bottom: 3rem;
 }
 
 .chat__woman {
@@ -199,4 +230,163 @@ a {
 .chat__man {
     grid-area: man;
     border-radius: 1rem;
+}
+
+.chat__content {
+  text-align: center;
+}
+
+.chat__description--bold {
+  color: var(--clr-teal-btn);
+  font-weight: 900;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.chat__title {
+  margin: 1rem 0rem 2rem;
+  color: var(--clr-darkblue-title);
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.chat__description {
+  font-weight: 700;
+}
+
+
+.numwrapper--2 {
+  margin: 0;
+  position: relative;
+
+}
+
+.numwrapper--2 .number {
+  margin-bottom: -25px;
+  background-color: white;
+}
+
+.offer {
+  background: linear-gradient(rgba(76, 149, 169, 0.8), rgba(76, 149, 169, 0.8)),url(starter-code/assets/mobile/image-footer.jpg) center/cover no-repeat;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.offer__title {
+  color: white;
+  font-weight: 900;
+  font-size: 2rem;
+  overflow-wrap: normal;
+}
+
+.offer__description {
+  color: white;
+  font-weight: 500;
+}
+
+@media (min-width: 48rem) and (max-width: 63.9rem) {
+  .hero__content {
+    max-width: 28rem;
+    margin: 4rem auto 1rem;
+  }
+
+  .hero__btns {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .chat__grid {
+    max-width: 42.5rem;
+    margin: 0 auto 3rem;
+    display: grid;
+    grid-template-areas: 
+    'woman women men man'
+    ;
+    gap: 1rem;
+  }
+
+  .chat__content {
+    max-width: 31.5rem;
+    margin: 0 auto 1rem;
+  }
+
+  .offer {
+    background: linear-gradient(rgba(76, 149, 169, 0.8), rgba(76, 149, 169, 0.8)),url(starter-code/assets/tablet/image-footer.jpg) center/cover 
+  }
+
+  .offer__title, .offer__description {
+    max-width: 31.5rem;
+    margin: 0 auto 1rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .hero__grid {
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    'imgLeft heroContent imgRight'
+    ;
+}
+
+.hero__img--right {
+  display: flex;
+  justify-content: end;
+}
+  
+  .hero__content {
+    max-width: 28rem;
+    margin: 4rem auto 1rem;
+  }
+
+  .hero__btns {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .chat__grid {
+    max-width: 70rem;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-areas: 
+    'woman women men man'
+    ;
+    gap: 1rem;
+  }
+
+  .chat__content {
+    max-width: 31.5rem;
+    margin: 0 auto 1rem;
+  }
+
+  .offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5rem;
+    text-align: start;
+    background: linear-gradient(rgba(76, 149, 169, 0.8), rgba(76, 149, 169, 0.8)),url(starter-code/assets/tablet/image-footer.jpg) center/cover 
+  }
+
+  .offer__title {
+    max-width: 27.813rem;
+
+  } 
+  
+  .offer__description {
+    max-width: 20.938rem;
+  }
+
 }
