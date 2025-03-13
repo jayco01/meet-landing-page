@@ -158,6 +158,9 @@ a {
 }
 
 .btn--blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--clr-teal-btn);
     padding: 1rem;
     color: var(--clr-white);
@@ -167,6 +170,9 @@ a {
 
 
 .btn--purple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--clr-purple-btn);
     padding: 1rem;
     color: var(--clr-white);
