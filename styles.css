@@ -168,6 +168,9 @@ a {
     width: 12rem;
 }
 
+.btn--blue:hover, .btn--purple:hover {
+  transform: scale(0.95);
+}
 
 .btn--purple {
     display: flex;
